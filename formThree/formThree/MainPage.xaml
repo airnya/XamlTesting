@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:formThree"
+             x:Class="formThree.MainPage"
+             BackgroundColor="White"
+             >
+    <Grid>
+        <StackLayout x:Name="SL2"  HorizontalOptions="Start" VerticalOptions="Start">
+            <Label FontSize="24" TextColor="Black" FontAttributes="Bold" >
+                &lt; Прием
+            </Label>
+        </StackLayout>
+        <StackLayout x:Name="SL1" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" >
+            <Label Text="" FontSize="24" FontFamily="Ubuntu" TextColor="Black"  FontAttributes="Bold">
+                Отсканируйте имя груза
+            </Label>
+            <Entry x:Name="Entry"  Placeholder = "Ввести с клавиатуры"  
+              Margin="45,0,0,0" PlaceholderColor  = "DarkGray" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
