@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:formFour"
+             x:Class="formFour.MainPage"
+             BackgroundColor="White">
+    <Grid>
+        <BoxView Color="DarkGray" HeightRequest="800" WidthRequest=".30" VerticalOptions="Center" HorizontalOptions="End"/>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        -->
+
+        <StackLayout x:Name="SL2" Grid.Column="0">
+            <StackLayout>
+                <Image Source="myimage.png" />
+                <Label FontSize="20"   TextColor="Black" FontAttributes="Bold" >
+                    Прием ASN
+                </Label>
+            </StackLayout>
+            <StackLayout  x:Name="SL1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="0,-80,0,0" >
+                <Label Text="" FontSize="20"  TextColor="Black"  FontAttributes="Bold">
+                    Введите имя ячейки приема
+                </Label>
+                <Entry x:Name="Entry"  Placeholder = "Ввести с клавиатуры"  
+              Margin="45,0,0,0" PlaceholderColor  = "DarkGray" />
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Column="1">
+            
+            <StackLayout>
+                <StackLayout>
+                    <BoxView Color="White" WidthRequest="20" HeightRequest="20" />
+                    <Label FontSize="16" TextColor="Black"  >
+                        Документ
+                    </Label>
+                    <Label FontSize="24" TextColor="Black" FontAttributes="Bold" >
+                        123456789
+                    </Label>
+                </StackLayout>
+                <StackLayout>
+                    <Label FontSize="16" TextColor="Black"  >
+                        Груз
+                    </Label>
+                    <Label FontSize="24" TextColor="Black" FontAttributes="Bold" >
+                        123456789
+                    </Label>
+                </StackLayout>
+                <StackLayout>
+                    <Label FontSize="16" TextColor="Black"  >
+                        Товар
+                    </Label>
+                    <Label FontSize="24" TextColor="Black" FontAttributes="Bold" >
+                        123456789
+                    </Label>
+                </StackLayout>
+                <StackLayout>
+                    <Label FontSize="16" TextColor="Black"  >
+                        Упаковка
+                    </Label>
+                    <Label FontSize="24" TextColor="Black" FontAttributes="Bold" >
+                        123456789
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+    </Grid>
+    <!-- <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+             
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Column="0" Grid.Row="0" x:Name="SL2"  HorizontalOptions="Start" VerticalOptions="Start">
+            <Label FontSize="24" TextColor="Black" FontAttributes="Bold" >
+                &lt; Прием ASN
+            </Label>
+        </StackLayout>
+        <StackLayout  x:Name="SL1" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" >
+            <Label Text="" FontSize="20" FontFamily="Ubuntu" TextColor="Black"  FontAttributes="Bold">
+                Введите имя ячейки приема
+            </Label>
+            <Entry x:Name="Entry"  Placeholder = "Ввести с клавиатуры"  
+              Margin="45,0,0,0" PlaceholderColor  = "DarkGray" />
+        </StackLayout>
+        <ScrollView x:Name="SL3" HorizontalOptions="End" VerticalOptions="Start" >
+            <StackLayout >
+            <Label FontSize="14" FontFamily="Ubuntu" TextColor="Black" >
+                Документ
+            </Label>
+                <Label Text="Метка 1" FontSize="Large" />
+                <Label Text="Метка 2" FontSize="Large" />
+            </StackLayout>
+        </ScrollView>
+        <StackLayout>
+            <Label Text="123"></Label>
+        </StackLayout>
+        
+    </Grid>
+    -->
+</ContentPage>
